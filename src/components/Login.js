@@ -38,7 +38,7 @@ class Login extends React.Component {
             <div className='loginContainer'>
                 <h2>Log in</h2>
                 <form className='loginForm'>
-                    <h4>Username</h4>
+                    <h4>Email</h4>
                     <input
                         type='text'
                         name="email"
