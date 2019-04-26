@@ -2,10 +2,13 @@ import React from 'react'
 
 
 class Home extends React.Component {
-    
-  componentDidMount(){
-    this.props.history.push('/login')
-  }
+    render(){
+    return(
+       <div className='homeContainer'>
+           <h2>Welcome! Home</h2>
+       </div>
+    )
+    }
 }
 
 export default Home
