@@ -17,12 +17,12 @@ class App extends Component {
     return (
       <div className="App">
         <nav className='appNav'>
-          <NavLink activeClassName='active' to='/'>Login</NavLink>
+          <NavLink activeClassName='active' to='/login'>Login</NavLink>
           <NavLink activeClassName='active' to='/signin'>Sign In</NavLink>
           <NavLink activeClassName='active' to='/sleep/data'>Sleep</NavLink>
         </nav>
         
-          <Route path ='/' component={Login} />
+          <Route path ='/login' component={Login} />
           <Route path='/signin' component={SignIn} />
           <PrivateRoute path='/sleep' component={Tech} />
         
