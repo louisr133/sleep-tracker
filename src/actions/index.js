@@ -112,7 +112,7 @@ export const opt = () => dispatch => {
     })
 
     axiosWithAuth()
-    .get(`https://build-week-sleep-tracker.herokuapp.com/api/users/average`, initialState.users)
+    .get(`https://build-week-sleep-tracker.herokuapp.com/api/users/average`)
     .then(res => {
         dispatch({
             type: OPT_SUCCESS,
