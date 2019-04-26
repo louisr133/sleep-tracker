@@ -25,6 +25,7 @@ class Login extends React.Component {
     }
 
     sendingCred = (e) => {
+        e.preventDefault();
 
         this.props.sendingCred(this.state.credentials)
         .then(() => {
@@ -37,7 +38,7 @@ class Login extends React.Component {
         return(
             <div className='loginContainer'>
                 <h2>Log in</h2>
-                <form className='loginForm'>
+                <form onSubmit ={(e) => this.sendingCred(e)} className='loginForm'>
                     <h4>Email</h4>
                     <input
                         type='text'
@@ -57,7 +58,7 @@ class Login extends React.Component {
                         onChange ={(e) => this.handleChange(e)}
                     />
 
-                    <button className='loginButton' type='button' onClick={(e) => this.sendingCred(e)}>Login</button>
+                    <button className='loginButton'>Login</button>
                 </form>
 
                 

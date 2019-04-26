@@ -37,7 +37,7 @@ class Edit extends React.Component {
         e.preventDefault();
 
         this.props.editPost(this.state.editedItem)
-        .then(this.props.history.push('/technology/listing'))
+        .then(this.props.history.push('/sleep/data'))
         
         this.setState({
             editedItem: {
