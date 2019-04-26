@@ -6,7 +6,7 @@ class Home extends React.Component {
     return(
        <div className='homeContainer'>
            <h2>Welcome!</h2>
-           <h3>Please <Link to='/login'>Login</Link> or <Link to='/signin'>Sign Up </Link>!</h3>
+           <h3>Please <Link to='/login'>Login</Link> or <Link to='/signin'>Sign Up</Link>!</h3>
        </div>
     )
     }
